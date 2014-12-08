@@ -1,0 +1,29 @@
+html{
+position:relative;
+min-height:100%;
+}
+
+body{
+margin: 0 0 100px;
+}
+
+footer{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:80px;
+}
+
+footer{
+  background: #0058B2;
+  margin-top:40px;
+  
+}
+
+footer p{
+	color: #fff;
+	margin-top:10px;
+	font-family:Cambria,Times, "Times New Roman", serif;
+	font-size:24px;
+}
