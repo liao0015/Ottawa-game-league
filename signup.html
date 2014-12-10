@@ -2,17 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warcraft III League:sign up</title>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<title>Sign up</title>
 </head>
 
 <body>
 
-<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
 <div class="page-header">
   <div class="container">
-    <h1>Ottawa League of E-Sports</h1>
+    <h1>Ottawa League of Warcraft III</h1>
   </div>
 </div>
 
@@ -23,14 +25,14 @@
     <!-- Home Nav -->
     <li role="presentation">
       <a href="index.html">
-        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+        <span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Home
       </a>
     </li>
     
     <!-- Standings Nav -->
     <li role="presentation">
       <a href="standing.html">
-        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
         Standings
       </a>
     </li>
@@ -38,7 +40,7 @@
     <!-- Locations Nav -->
     <li role="presentation" class="dropdown">
       <a href="locations.html">
-        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 
+        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> 
         Locations
       </a>
     </li>
@@ -46,75 +48,134 @@
     <!-- Signup Nav -->
     <li role="presentation" class="active">
       <a href="signup.html">
-        <span class="glyphicon glyphicon glyphicon-calendar"></span>
+        <span class="glyphicon glyphicon-ok-circle"></span>
         Sign up
       </a>
     </li>
   </ul>
 </div>
 
-<div class="wrapper panel panel-info">
+<!-- Signup form -->
+<div class="container top-buffer">
+<div class=" panel panel-info">
   	<div class="panel-heading">Create an account</div>
-  
-<div class="signup">
-    <div class="col">
-        <div class="col-1 input-group">
-            <span class="input-group-addon glyphicon glyphicon-user"></span>
-            <input type="text" class="form-control" placeholder="Your Username">
+	<div class="signup col">
+     	<!-- full name -->
+        <div class="coln row">
+            <div class="coln coln-name col-xs-4">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span>First name</span>
+                    <input type="text" class="form-control" placeholder="Your First Name">
+            </div>
+            <div class="coln coln-name col-xs-4">   
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span>Last name</span>
+                    <input type="text" class="form-control" placeholder="Your Last Name">
+            </div>
         </div>
-        
-        <div class="col-1 input-group">
-            <span class="input-group-addon glyphicon glyphicon-user"></span>
-            <input type="text" class="form-control" placeholder="Your First Name">
+        <!-- unser name and email -->
+        <div class="coln row">
+            <div class="coln coln-name col-xs-4">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    <span>User name</span>
+                    <input type="text" class="form-control" placeholder="Your Username">
+        	</div>
+            <div class="coln coln-name col-xs-4">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <span>Your Email</span>
+                    <input type="text" class="form-control" placeholder="Your Email">
+            </div>
         </div>
-        
-        <div class="col-1 input-group">
-            <span class="input-group-addon glyphicon glyphicon-user"></span>
-            <input type="text" class="form-control" placeholder="Your Last Name">
+        <!-- password information -->
+        <div class="coln row">
+            <div class="coln coln-name col-xs-4">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <span>Password</span>
+                    <input type="password" class="form-control" placeholder="Password">
+                            </div>
+            <div class="coln coln-name col-xs-4">
+                    <span class="glyphicon glyphicon-repeat"></span>
+                     <span>Confirm Password</span>
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+            </div>
+		</div>
+        <!-- Address information: street -->
+		<div class="coln row">
+            <div class="coln coln-address col-xs-8">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span>Street</span>
+                    <input type="text" class="form-control" placeholder="Address:Street">
+            </div>
+		</div>
+        <!-- Address information -->
+        <div class="coln row">
+			<div class="coln coln-address col-xs-3">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span>City</span>
+                    <input type="text" class="form-control" placeholder="Address:City">
+			</div>
+            <div class="coln coln-address col-xs-2">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span>Province</span>
+                    <input type="text" class="form-control" placeholder="Address:Province">
+        	</div>
+            <div class="coln coln-address col-xs-3">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span>Postal code</span>
+                    <input type="text" class="form-control" placeholder="Address:Postal code">
+            </div>
+		</div>
+        <!-- credit card information -->
+        <div class="clon row">
+            <div class="coln coln-card col-xs-2">
+                    <span class="glyphicon glyphicon-credit-card"></span>
+                    <span>Credit card type</span>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Select <span class="caret"></span></button>
+                 <ul class="dropdown-menu" role="menu">
+                 	<li><a href="#">Master</a></li>
+                   	<li><a href="#">Visa</a></li>
+                    <li><a href="#">American express</a></li>
+                 </ul>
+            </div>
+            <div class="coln coln-card col-xs-4">
+            		<span class="glyphicon glyphicon-credit-card"></span>
+                	<span>Credit card number</span>
+                <input type="text" class="form-control" placeholder="Credit card number">
+            </div>
+            <div class="coln coln-card col-xs-2">
+            		<span class="glyphicon glyphicon-credit-card"></span>
+                	<span>Security code</span>
+                <input type="password" class="form-control" placeholder="Security code">
+            </div>
         </div>
-        
-        <div class="col-1 input-group">
-            <span class="input-group-addon glyphicon glyphicon-envelope"></span>
-            <input type="text" class="form-control" placeholder="Your Email">
-        </div>
-        
-        <div class="col-1 input-group">
-            <span class="input-group-addon glyphicon glyphicon-lock"></span>
-            <input type="password" class="form-control" placeholder="Password">
-        </div>
-        
-        <div class="col-1 input-group">
-            <span class="input-group-addon glyphicon glyphicon-repeat"></span>
-            <input type="password" class="form-control" placeholder="Confirm Password">
-        </div>
-        
-        <div class="col-1 row">
-            <div class="col-lg-6">
+         <!-- Terms of use -->
+        <div class="coln row">
+            <div class="coln coln-name col-xs-8">
+            	<span class="glyphicon glyphicon-ok-sign"></span>
+            	<span>Terms of use</span>
                 <div class="input-group">
                     <span class="input-group-addon">
                         <input type="checkbox">
                     </span>
                     <input type="text" class="form-control" placeholder="I agree to the Terms of Use">
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        
-        
-            <button type="button" class="col-1 btn btn-default btn-lg">
+                </div>
+            </div>
+        </div>
+         	<!-- sign up button -->
+            <button type="button" class="coln btn btn-default btn-md label-success">
                 <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Sign up
             </button>
-    </div>
-    
-		<img src="img/war3ss.jpg" alt="sign up picture">
-       
-</div>
-</div>
+	</div> <!-- signup -->
+</div><!-- panel panel-infor-->
+</div><!-- container top-buffer-->
 
-<footer class="buffer-top">
+<footer class="top-buffer">
   <div class="container">
     <p>Copyright 2014</p>
   </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

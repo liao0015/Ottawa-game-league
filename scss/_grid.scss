@@ -1,34 +1,71 @@
 
 
-.top-buffer { margin-top: 20px; }
-.bottom-buffer { margin-bottom: 20px; }
+/*---General---*/
+.top-buffer { margin-top: 2%; }
+.bottom-buffer { margin-bottom: 2%; }
 
-h2, h3{ margin-top: 0; }
-
-.callout-container .col-xs-12{
-  margin-bottom: 3em;
+/*---home---*/
+.page-header{
+	background: $background-color;
 }
 
-.sidebar .btn-signup{
-  display: block;
-  width: 100%;
-  margin-bottom:3em;
+.page-header h1{
+	color: $base-text-color;
+	text-align:center;
+}
+
+.sidebar .btn{
+	display: block;
+	width: 100%;
+	margin-bottom:2%;
 }
 
 /*---standing---*/
-.panel{
-	margin:2%;
+
+/*---locations---*/
+.mapdiv img{
+	width:100%;
+}
+
+.mapdiv li{
+	list-style-type: none;
 }
 
 /*---signup---*/
 .col{
-	width:50%;
 	margin-left:2%;
 	margin-top:2%;
 }
 
-.col-1{
+.coln{
 	margin-bottom:1%;
+}
+
+.cardBtn{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+/*---responsive---*/
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-middle-1){
+	.coln-name{
+		width:80%;
+		float:left;
+	}
+}
+
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-middle-2){
+	.coln-address{
+		width:80%;
+		float:left;
+	}
+}
+
+@media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large){
+	.coln-card{
+		width:80%;
+		float:left;
+	}
 }
 
 

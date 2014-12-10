@@ -2,17 +2,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warcraft III League: locations</title>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<title>Locations</title>
 </head>
 
 <body>
 
-<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
 <div class="page-header">
   <div class="container">
-    <h1>Ottawa League of E-Sports</h1>
+    <h1>Ottawa League of Warcraft III</h1>
   </div>
 </div>
 
@@ -23,14 +26,14 @@
     <!-- Home Nav -->
     <li role="presentation">
       <a href="index.html">
-        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+        <span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Home
       </a>
     </li>
     
     <!-- Standings Nav -->
     <li role="presentation">
       <a href="standing.html">
-        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
         Standings
       </a>
     </li>
@@ -38,7 +41,7 @@
     <!-- Locations Nav -->
     <li role="presentation" class="active">
       <a href="locations.html">
-        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 
+        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> 
         Locations
       </a>
     </li>
@@ -46,18 +49,47 @@
     <!-- Signup Nav -->
     <li role="presentation" class="dropdown">
       <a href="signup.html">
-        <span class="glyphicon glyphicon glyphicon-calendar"></span>
+        <span class="glyphicon glyphicon-ok-circle"></span>
         Sign up
       </a>
     </li>
   </ul>
 </div>
 
-<footer class="buffer-top">
+<div class="container top-buffer">
+<div class="mapdiv">
+  	<ul>
+        <!-- kanata division -->
+        <li>
+        	<h4>Kanata Division</h4>
+        	<img src="https://maps.googleapis.com/maps/api/staticmap?center=Kanata,Ottawa,ON&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:K%7CKanata,Ottawa,ON">
+        </li>
+        
+        <!-- orlean division -->
+        <li>
+        	<h4>Orlean Division</h4>
+          	<img src="https://maps.googleapis.com/maps/api/staticmap?center=Orleans,Ottawa,ON&zoom=13&size=600x300&maptype=roadmap
+&markers=color:green%7Clabel:O%7COrleans,Ottawa,ON">
+        </li>
+        
+         <!-- central Ottawa division -->
+        <li>
+        	<h4>Central Ottawa Division</h4>
+          	<img src="https://maps.googleapis.com/maps/api/staticmap?center=sandy+hill,Ottawa,ON&zoom=13&size=600x300&maptype=roadmap
+&markers=color:red%7Clabel:S%7Csandy+hill,Ottawa,ON">
+        </li>
+   	</ul>
+</div>
+</div><!-- container top-buffer-->
+
+<footer class="top-buffer">
   <div class="container">
     <p>Copyright 2014</p>
   </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
