@@ -1,2 +1,6 @@
-<h3>Ottawa Game League</h3>
-<link>http://liao0015.github.io/Ottawa-game-league/</link>
+# Ottawa Game League
+
+A basic responsive website
+[gh-pages link](http://liao0015.github.io/Ottawa-game-league/)
+
+netlify cms added
